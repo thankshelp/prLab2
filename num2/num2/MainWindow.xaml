@@ -1,0 +1,22 @@
+﻿<Window x:Class="num2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:num2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="375" Width="326">
+    <Grid>
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#FFB6F2FF" Offset="1"/>
+                <GradientStop Color="White"/>
+                <GradientStop Color="#FFC4F4FF" Offset="0.825"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <TextBox x:Name="str" HorizontalAlignment="Left" Height="23" Margin="100,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <ListBox x:Name="stack" HorizontalAlignment="Left" Height="158" Margin="100,138,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="button" Content="Add" HorizontalAlignment="Left" Margin="180,101,0,0" VerticalAlignment="Top" Width="79" Click="Button_Click" Background="#FFACE1FF"/>
+
+    </Grid>
+</Window>

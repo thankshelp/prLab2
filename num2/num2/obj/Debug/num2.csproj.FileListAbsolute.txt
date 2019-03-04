@@ -1,0 +1,15 @@
+D:\Программирование\2 семестр\Lab2\num2\num2\bin\Debug\num2.exe.config
+D:\Программирование\2 семестр\Lab2\num2\num2\bin\Debug\num2.exe
+D:\Программирование\2 семестр\Lab2\num2\num2\bin\Debug\num2.pdb
+D:\Программирование\2 семестр\Lab2\num2\num2\obj\Debug\num2.csprojAssemblyReference.cache
+D:\Программирование\2 семестр\Lab2\num2\num2\obj\Debug\MainWindow.g.cs
+D:\Программирование\2 семестр\Lab2\num2\num2\obj\Debug\App.g.cs
+D:\Программирование\2 семестр\Lab2\num2\num2\obj\Debug\num2_MarkupCompile.cache
+D:\Программирование\2 семестр\Lab2\num2\num2\obj\Debug\num2_MarkupCompile.lref
+D:\Программирование\2 семестр\Lab2\num2\num2\obj\Debug\MainWindow.baml
+D:\Программирование\2 семестр\Lab2\num2\num2\obj\Debug\num2.g.resources
+D:\Программирование\2 семестр\Lab2\num2\num2\obj\Debug\num2.Properties.Resources.resources
+D:\Программирование\2 семестр\Lab2\num2\num2\obj\Debug\num2.csproj.GenerateResource.cache
+D:\Программирование\2 семестр\Lab2\num2\num2\obj\Debug\num2.csproj.CoreCompileInputs.cache
+D:\Программирование\2 семестр\Lab2\num2\num2\obj\Debug\num2.exe
+D:\Программирование\2 семестр\Lab2\num2\num2\obj\Debug\num2.pdb
