@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,17 +32,39 @@ namespace num5
             dlg.FileName = "Document";
             dlg.DefaultExt = "Text documents (.txt)|*.txt";
             dlg.ShowDialog();
-            lb.Content = dlg.FileName;
+
+            string line;
+            System.IO.StreamReader file = new System.IO.StreamReader(dlg.FileName);
+
+            while ((line = file.ReadLine()) != null)
+            {
+                lb.Items.Add(line);
+            }
+            file.Close();
         }
 
         private void Sv_Click(object sender, RoutedEventArgs e)
         {
             Microsoft.Win32.SaveFileDialog dlg = new Microsoft.Win32.SaveFileDialog();
             dlg.FileName = "Document";
-            dlg.DefaultExt = ".txt";
-            dlg.Filter = "Text documents (.txt)|*.txt";
+            dlg.DefaultExt = "Text documents (.txt)|*.txt";
             dlg.ShowDialog();
-            
+
+            string[] line = lb.Items.OfType<string>().ToArray();
+
+            using(StreamWriter file = new StreamWriter(dlg.FileName))
+            {
+                foreach (string str in line)
+                    file.WriteLine(str);
+            }
+            lb.Items.Clear();
+        }
+
+        private void Clap_Click(object sender, RoutedEventArgs e)
+        {
+            lb.Items.Add(str.Text);
+
+            str.Text = "";
         }
     }
 }

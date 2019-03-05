@@ -5,13 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:num5"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="196.5" Width="420.2">
     <Grid>
-        <Menu x:Name="menu" HorizontalAlignment="Left" Height="53" Margin="40,41,0,0" VerticalAlignment="Top" Width="58">
-            <MenuItem x:Name="op" Header="Open" Click="Op_Click"/>
-            <MenuItem x:Name="sv" Header="Save" Click="Sv_Click"/>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFFFF7FD" Offset="1"/>
+                <GradientStop Color="#FEE0BCEE" Offset="0.635"/>
+                <GradientStop Color="#FFECCEF1" Offset="0.791"/>
+                <GradientStop Color="#FE8BE6D7"/>
+                <GradientStop Color="#FFF3CFF5" Offset="0.943"/>
+                <GradientStop Color="#FDB7E8DF" Offset="0.176"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <ListBox x:Name="lb" HorizontalAlignment="Left" Height="100" Margin="121,45,0,0" VerticalAlignment="Top" Width="259" RenderTransformOrigin="0.514,0.515"/>
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="49" Margin="41,17,0,0" VerticalAlignment="Top" Width="60">
+            <Menu.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFB7E8DF" Offset="0.492"/>
+                    <GradientStop Color="#FFD0CCE8" Offset="1"/>
+                    <GradientStop Color="#FF95E6D8"/>
+                </LinearGradientBrush>
+            </Menu.Background>
+            <MenuItem x:Name="op" Header="Open" Click="Op_Click" Background="#FFEDABF7"/>
+            <MenuItem x:Name="sv" Header="Save" Click="Sv_Click" Background="#FFA0E8DB"/>
         </Menu>
-        <Label x:Name="lb" Content="" HorizontalAlignment="Left" Margin="134,41,0,0" VerticalAlignment="Top" Height="100" Width="110"/>
+        <Button x:Name="clap" Content="Add string" HorizontalAlignment="Left" Margin="121,17,0,0" VerticalAlignment="Top" Width="75" Click="Clap_Click" BorderBrush="#FFB14DCF" Background="#FFE7C3FB"/>
+        <TextBox x:Name="str" HorizontalAlignment="Left" Height="20" Margin="201,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" Text="Enter string"/>
 
     </Grid>
 </Window>
