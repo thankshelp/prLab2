@@ -16,7 +16,7 @@
         </Grid.Background>
         <TextBox x:Name="str" HorizontalAlignment="Left" Height="23" Margin="100,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <ListBox x:Name="stack" HorizontalAlignment="Left" Height="158" Margin="100,138,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="button" Content="Add" HorizontalAlignment="Left" Margin="180,101,0,0" VerticalAlignment="Top" Width="79" Click="Button_Click" Background="#FFACE1FF"/>
+        <Button x:Name="button" Content="Add" HorizontalAlignment="Left" Margin="121,100,0,0" VerticalAlignment="Top" Width="79" Click="Button_Click" Background="#FFACE1FF"/>
 
     </Grid>
 </Window>

@@ -20,6 +20,9 @@ namespace num4
     /// </summary>
     public partial class MainWindow : Window
     {
+        int s = 0;
+        bool v = false;
+
         System.Windows.Threading.DispatcherTimer Timer;
         public MainWindow()
         {
@@ -30,16 +33,38 @@ namespace num4
         }
         private void dispatcherTimer_Tick(object sender, EventArgs e)
         {
-            lb.Content = DateTime.Now.Second;
+            s++;
+
+            if (v == true)
+            {
+                lb.Content = "";
+                if (hour.IsChecked == true)
+                    lb.Content += (s / 3600).ToString();
+                if (min.IsChecked == true)
+                    lb.Content += ":" + (s / 60).ToString();
+                if (sec.IsChecked == true)
+                    lb.Content += ":" + (s % 60).ToString();
+
+            }
+
         }
         private void Start_Click(object sender, RoutedEventArgs e)
         {
             Timer.Start();
+            v = true;
         }
 
         private void Stop_Click(object sender, RoutedEventArgs e)
         {
+            
+            v = false; 
+        }
+
+        private void Reset_Click(object sender, RoutedEventArgs e)
+        {
+            lb.Content = "";
             Timer.Stop();
+            s = 0;
         }
     }
 }

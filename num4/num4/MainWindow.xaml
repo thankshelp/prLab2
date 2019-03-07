@@ -6,11 +6,17 @@
         xmlns:local="clr-namespace:num4"
         mc:Ignorable="d"
         Title="MainWindow" Height="319.504" Width="405.674">
-    <Grid>
-        <Label x:Name="lb" Content="" HorizontalAlignment="Left" Margin="163,65,0,0" VerticalAlignment="Top" Height="73" Width="75" FontSize="48"/>
-        <Button x:Name="start" Content="Start" HorizontalAlignment="Left" Margin="46,204,0,0" VerticalAlignment="Top" Width="75" Click="Start_Click"/>
-        <Button x:Name="stop" Content="Stop" HorizontalAlignment="Left" Margin="163,204,0,0" VerticalAlignment="Top" Width="75" Click="Stop_Click"/>
-        <Button x:Name="reset" Content="Reset" HorizontalAlignment="Left" Margin="282,204,0,0" VerticalAlignment="Top" Width="75"/>
+    <Grid RenderTransformOrigin="0.496,0.545">
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#FFFF98E2"/>
+                <GradientStop Color="White" Offset="1"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <Label x:Name="lb" Content="" HorizontalAlignment="Left" Margin="139,98,0,0" VerticalAlignment="Top" Height="81" Width="132" FontSize="48"/>
+        <Button x:Name="start" Content="Start" HorizontalAlignment="Left" Margin="46,204,0,0" VerticalAlignment="Top" Width="75" Click="Start_Click" Background="#FFFACCFF"/>
+        <Button x:Name="stop" Content="Stop" HorizontalAlignment="Left" Margin="163,204,0,0" VerticalAlignment="Top" Width="75" Click="Stop_Click" Background="#FFFACCFF"/>
+        <Button x:Name="reset" Content="Reset" HorizontalAlignment="Left" Margin="282,204,0,0" VerticalAlignment="Top" Width="75" Click="Reset_Click" Background="#FFFACCFF"/>
         <CheckBox x:Name="hour" Content="Hour" HorizontalAlignment="Left" Margin="46,258,0,0" VerticalAlignment="Top"/>
         <CheckBox x:Name="min" Content="Minutes" HorizontalAlignment="Left" Margin="167,258,0,0" VerticalAlignment="Top"/>
         <CheckBox x:Name="sec" Content="Seconds" HorizontalAlignment="Left" Margin="286,258,0,0" VerticalAlignment="Top"/>
